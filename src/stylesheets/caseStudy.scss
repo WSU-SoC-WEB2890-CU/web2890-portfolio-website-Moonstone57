@@ -1,0 +1,109 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'custom' as *;
+
+
+#caseStudyContent{
+    img{
+        width: 100vw;
+        z-index: 5;
+    }
+
+    #caseStudyOverviewSection{
+        background-color: $secondary;
+        color: white;
+        
+    }
+    
+    .table{
+        th, td{
+            border: 1px solid $primary;
+        }
+        tbody{
+            border-color: $primary;
+        }
+    }
+
+    /* Card Styles */
+    .sectionTitle, .card-title{
+        background-color: $primary;
+        color: white;
+        text-align: center;
+    }
+
+    .card{
+        border: 2px solid $primary;
+        margin: 1.5rem 0;
+        width: 100%;
+        .card-title{
+            padding: 1rem;
+        }
+    }
+
+    /* Sizing for Case Study Color Scheme */
+    .colorCircle{
+        border-radius: 100%;
+        width: 12rem;
+        height: 12rem;
+        font-weight: 700;
+        background-color: transparent;
+        border: 3rem solid transparent;
+        color: black;
+
+        @include media-breakpoint-up(md){
+            width: 10rem;
+            height: 10rem;
+            border-width: 2.5rem;
+        }
+
+        @include media-breakpoint-up(md){
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+
+    /* Case Study Color Scheme Styles */
+    #primaryOne{
+        border-color: #445E56;
+    }
+
+    #primaryTwo{
+        border-color: #5E5D3E;
+    }
+
+    #primaryThree{
+        border-color: #5E463E;
+    }
+
+    #secondaryOne{
+        border-color: #B3B291;
+    }
+
+    #secondaryTwo{
+        border-color: #8D9E9A;
+    }   
+
+    #secondaryThree{
+        border-color: #4A3E5E;
+    }
+
+    #accentOne{
+        border-color: #8EDECA;
+    }
+
+    #accentTwo{
+        border-color: #9D91B3;
+    }
+
+    #accentThree{
+        border-color: #B39991;
+    }
+
+    #componentSection{
+        background-color: $secondary;
+
+        img{
+            border: 3px solid $primary;
+        }
+    }
+}

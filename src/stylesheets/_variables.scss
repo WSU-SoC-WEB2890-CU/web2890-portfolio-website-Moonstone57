@@ -1,0 +1,35 @@
+/* Font Variables */
+$font-size-base: 1rem;
+$font-family-base: "Titillium Web", sans-serif;
+$headings-font-family: "Dosis", sans-serif;
+
+//Mobile Font Sizes
+$h1-font-size: 1.749rem;
+$h2-font-size: 1.521rem;
+$h3-font-size: 1.323rem;
+$h4-font-size: 1.15rem;
+
+//Tablet Font Sizes
+$h1-md-font-size: 2.856rem;
+$h2-md-font-size: 2.197rem;
+$h3-md-font-size: 1.69rem;
+$h4-md-font-size: 1.3rem;
+
+//Desktop Font Sizes
+$h1-lg-font-size: 5.0625rem;
+$h2-lg-font-size: 3.375rem;
+$h3-lg-font-size: 2.25rem;
+$h4-lg-font-size: 1.5rem;
+
+/* Colors */
+$primary: #6D0F1A;
+$secondary: #923F49;
+$dark: #0B1D39;
+$light: #CED8E1;
+$accent: #0F574E;
+$teal: #96EDE3;
+$blueGray: #CED8E1;
+
+
+@import "bootstrap/scss/bootstrap.scss";
+

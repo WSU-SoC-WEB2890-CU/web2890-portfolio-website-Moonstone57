@@ -1,0 +1,108 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'custom' as *;
+
+.btn{
+    @include button-style;
+}
+
+/* Sections */
+#aboutMeTitleSection{
+    .heroImgContainer{
+        background-color: white;
+
+        img{
+            border-radius: 30px;
+            border: 3px solid $primary;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
+
+            @include media-breakpoint-up(md){
+                width: 40%;
+                height: 40%;
+            }
+
+            @include media-breakpoint-up(lg){
+                width: 30%;
+                height: 30%;
+            }
+        }
+    }
+}
+
+#employmentSection{
+    background-color: $secondary;
+    .jobCard{
+        
+        .jobText{
+            background-color: white;
+        }
+
+        .jobName{
+            font-style: italic;
+        }
+
+        .jobDates{
+            color: $primary;
+        }
+        
+        img{
+            border: 3px solid $primary;
+        }
+
+         @include media-breakpoint-up(md){
+            img{
+                width: 50%;
+            }
+        }
+
+            @include media-breakpoint-up(lg){
+                img{
+                    width: 25%;
+                }
+            }
+    }
+}
+
+#skillSetSection{
+    .card{
+        background-color: $secondary;
+        color: white;
+        
+        .card-title{
+            background-color: $primary;
+            margin: 0;
+        }
+    }
+
+    @include media-breakpoint-up(lg){
+        .card{
+            width: 45%;
+        }
+    }
+}
+
+#originSection{
+    background-color: $secondary;
+    .card{
+        border-color: transparent;
+        background-color: $primary;
+        color: black;
+
+        .card-title{
+            color: white;
+            text-align: center;
+        }
+
+        .card-body{
+            background-color: white;
+        }
+    }
+
+    @include media-breakpoint-up(lg){
+        .card-title{
+           min-width: 25vw;
+        }
+    }
+}

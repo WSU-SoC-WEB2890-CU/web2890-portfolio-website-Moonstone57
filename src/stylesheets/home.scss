@@ -1,0 +1,213 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'custom' as *;
+
+/* Font Styles*/
+h1{
+    font-size: $h1-font-size;
+}
+
+h2{
+    font-size: $h2-font-size;
+}
+
+h3{
+    font-size: $h3-font-size;
+}
+
+h4{
+    font-size: $h4-font-size;
+}
+
+//button Styles
+.btn{
+    @include button-style;
+}
+
+/* Sections */
+#heroImgSection{
+    height: 15rem;
+    width: 100%;
+    #heroImgContainer{
+        background-image: url("../images/designLargeHero.jpg");
+        background-size: cover;
+        background-position: 80% bottom;
+        background-repeat: no-repeat;
+        height: 15rem;
+        width: 130%;
+
+        #heroText{
+            position: relative;
+            .text-primary{
+                color: $primary !important;
+            }
+            .fw-semibold{
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    /* Hero Img Media Queries */
+    @include media-breakpoint-up(sm){
+        height: 25rem;
+
+        #heroImgContainer{
+            background-position: 60% bottom;
+            height: 25rem;
+            width: 122%;
+        }
+        
+    }
+
+    @include media-breakpoint-up(md){
+        height: 30rem;
+
+        #heroImgContainer{
+            background-position: 30% bottom;
+            height: 30rem;
+            width: 100%;
+        }
+        
+    }
+
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+        
+        #heroImgContainer{
+            background-position: left 20% center;
+            height: 100vh;
+        }
+    }
+}
+
+#recentProjectsSection{
+    .card{
+        width: 75%;
+        text-align: center;
+        background-color: $secondary;
+        color: white;
+        
+        hr{
+            background-color: $primary;
+            height: .15rem;
+            opacity: 1;
+        }
+
+        .card-title{
+            background-color: $primary;
+
+        }
+
+        @include media-breakpoint-up(md){
+            width: 47%;
+        }
+    }
+}
+
+#aboutContactSection{
+    color: white;
+    text-align: center;
+    height: 30rem;
+    
+    #featureImgContainer{
+        background-image: url("../images/trees.jpg");
+        background-size: cover;
+        background-position: right 80% center;
+        background-repeat: no-repeat;
+        height: 100%;
+        
+        #featureImgText{
+            #aboutContainer, #contactContainer{
+                background-color: rgba($primary, 0.75);
+                border: 3px solid $secondary;
+                width: 35%;
+                position: relative;
+            }
+        }
+    }
+
+    /* About Contact Section Media Queries */
+    @include media-breakpoint-up(md){
+        height: 38rem;
+
+        #featureImgText{
+            width: 75%;
+        }
+    }
+
+    @include media-breakpoint-up(lg){
+        #featureImgContainer{
+            background-image: url("../images/HeadShotAboutContactDesktop.jpg");
+            background-position: 70% center;
+
+            #featureImgText{
+                width: 40%;
+            }
+        }
+    }
+}
+
+footer {
+    i{
+        font-size: 5.5rem;
+        color: white;
+    }
+}
+
+/* Hero Section Media Queries */
+@include media-breakpoint-up(md){
+    #heroImgSection{ 
+        #heroText{
+            top: 7%;
+            left: 4%;
+            h1{
+                font-size: $h1-md-font-size;
+            }
+
+            h2{
+                font-size: $h2-md-font-size;
+            }
+
+            h3{
+                font-size: $h3-md-font-size;
+            }
+
+            h4{
+                font-size: $h4-md-font-size;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+    #heroImgSection{ 
+        #heroText{
+            top: 2%;
+            left: 2%;
+            h1{
+                font-size: $h1-lg-font-size;
+            }
+
+            h2{
+                font-size: $h2-lg-font-size;
+            }
+
+            h3{
+                font-size: $h3-lg-font-size;
+            }
+
+            h4{
+                font-size: $h4-lg-font-size;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl){
+    #heroImgSection{ 
+        #heroText{
+            left: 2%;
+        }
+    }
+}

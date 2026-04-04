@@ -1,0 +1,129 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'custom' as *;
+
+.btn{
+    @include button-style;
+}
+
+.sectionTitle{
+    background-color: $primary;
+    color: white;
+}
+
+/* Sections */
+#projectTitleSection{
+    .heroImgContainer{
+        background-color: white;
+
+        img{
+            border-radius: 30px;
+            border: 3px solid $primary;
+            width: 100%;
+            height: 100%;
+            filter: brightness(1.15);
+            box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
+
+            @include media-breakpoint-up(md){
+                width: 40%;
+                height: 40%;
+            }
+
+            @include media-breakpoint-up(lg){
+                width: 30%;
+                height: 30%;
+            }
+        }
+    }
+}
+
+#projectGallery{
+    background-color: $secondary;
+
+    .card{
+        border-radius: 0;
+        border: 3px solid $primary;
+        text-decoration: none;
+        color: black;
+        height: 17rem;
+        width: 85%;
+        text-align: center;
+
+        .hoverContent{
+            visibility: hidden;
+            display: none;
+        }
+
+        .card-title{
+            font-weight: 700;
+        }
+
+        .card-body{
+            justify-content: center;
+        }
+
+        .colorOverlay{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                inset: 0;
+                background-color: rgba($accent, 0.3);
+            }
+        }
+
+        &:hover{
+            background-color: $primary;
+            color: white;
+            text-align: center;
+            display: flex;
+
+            .hoverContent{
+                visibility: visible;
+                display: block;
+            }
+
+            img{
+                visibility: hidden;
+                display: none;
+            }
+
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        //Card Media Queries
+        @include media-breakpoint-up(sm){
+            height: 23rem;
+        }
+
+        @include media-breakpoint-up(md){
+            width: 45%;
+        }
+
+        @include media-breakpoint-up(lg){
+            height: 22rem;
+        }
+
+        @include media-breakpoint-up(xl){
+            height: 26rem;
+        }
+
+         @include media-breakpoint-up(xxl){
+            height: 32rem;
+        }
+    }
+
+    hr{
+        border: 1px solid white;
+        opacity: 1;
+        width: 100%;
+        margin: 1rem auto;
+        .hoverShow{
+            display: flex;
+        }
+    }
+}

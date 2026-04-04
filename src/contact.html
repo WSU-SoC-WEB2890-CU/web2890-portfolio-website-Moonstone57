@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Katie Aland Portfolio</title>
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark p-2">
+    <div class="container-fluid">
+      <a class="navbar-brand logoContainer" href="index.html">
+        <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid p-1" alt="Katie Aland Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html" aria-current="page">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="contactSection" class="container-fluid">
+      <div class="heroImgContainer m-4 row align-items-center justify-content-evenly justify-content-xl-center">
+        <div class="col-4 my-4 d-none d-lg-flex">
+          <img class="img-fluid w-100 h-auto" src="images/HeadShotRedWall.jpg" alt="Katie Aland playing a violin">
+        </div>
+        <article class="heroText col-12 col-lg-7 mt-4 mt-lg-0 text-md-start">
+          <div class="text-center text-lg-start mb-4">
+            <h1 class="fw-bold">Contact Me</h1>
+            <h2>Interested in working with me? Get in touch!</h2>
+          </div>
+          <form class="w-100">
+            <div class="mb-3">
+              <label for="firstName" class="form-label fs-4">First Name</label>
+              <input type="text" class="form-control p-2 w-25" id="firstName" placeholder="Ex. John">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label fs-4">Last Name</label>
+              <input type="text" class="form-control p-2 w-25" id="lastName" placeholder="Ex. Doe">
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label fs-4">Message</label>
+              <textarea class="form-control p-2 w-75" id="contactMessage" rows="3" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn w-25 mt-3 fw-semibold">Submit</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-4 container-fluid justify-content-center">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-4 col-lg-2 mb-4">
+        <a class="logoContainer d-flex justify-content-center" href="index.html">
+          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid w-75" alt="Katie Aland Logo">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center gap-3">
+        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank">
+          <i class="bi bi-linkedin fs-1"></i>
+        </a>
+        <a href="contact.html#contactSection">
+          <i class="bi bi-envelope fs-1"></i>
+        </a>
+      </div>
+    </div>  
+    <p class="mt-4">&copy;2026 Katie Aland</p>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

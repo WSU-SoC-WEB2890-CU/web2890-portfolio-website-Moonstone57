@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Handicap Calculator Project - Katie Aland Portfolio</title>
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark p-2">
+    <div class="container-fluid">
+      <a class="navbar-brand logoContainer" href="index.html">
+        <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid p-1" alt="Katie Aland Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <section id="handicapCalculatorContentSection">
+      <div id="projectImgContainer">
+        <img class="w-100" src="images/handicapCalculator.png" alt="Golf Handicap Calculator Website Home Page">
+      </div>
+        <h1 class="sectionTitle">Golf Handicap Calculator</h1>
+        <nav aria-label="breadcrumb" class="px-3 pt-4 m-0">
+          <ol class="breadcrumb m-0 p-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Golf Handicap Calculator</li>
+          </ol>
+        </nav>
+      <article class="container-fluid d-flex flex-column flex-md-row justify-content-evenly py-3 py-md-5 px-3">
+        <div class="card mb-3 mb-md-0">
+          <h3 class="card-title">Overview</h3>
+          <div class="card-body">
+            <p>I created the Golf Handicap Calculator for a class assignment in 2025. For this assignment, I needed to create a webpage that would prioritize Javascript in a web application. I decided to create a golf handicap calculator. This website allows a user to input their score either through hole by hole or through total scores. The website then takes their score to calculate the difference of their score and par. Then it displays the handicap to the users.</p>
+          </div>
+        </div>
+        <div class="card mb-3 mb-md-0">
+          <h3 class="card-title">Process</h3>
+          <div class="card-body">
+            <p>This website utilizes HTML, CSS, and JavaScript. Another important aspect of the website that is created through Javascript is saving the handicap information through local storage. This means that even if the user reloads the page they will not lose their already calculated handicap.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Takeaways</h3>
+          <div class="card-body">
+            <p>This was my first JavaScript project. I learned a lot through this project. I learned how to apply link JavaScript to HTML and CSS. I also gained experience making a website’s form inputs truly functional.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="p-4 container-fluid justify-content-center">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-4 col-lg-2 mb-4">
+        <a class="logoContainer d-flex justify-content-center" href="index.html">
+          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid w-75" alt="Katie Aland Logo">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center gap-3">
+        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank">
+          <i class="bi bi-linkedin fs-1"></i>
+        </a>
+        <a href="contact.html#contactSection">
+          <i class="bi bi-envelope fs-1"></i>
+        </a>
+      </div>
+    </div>  
+    <p class="mt-4">&copy;2026 Katie Aland</p>
+  </footer>
+
+    <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

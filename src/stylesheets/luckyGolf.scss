@@ -1,0 +1,41 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'custom' as *;
+
+#luckyGolfContentSection{
+    background-color: $secondary;
+
+    .card{
+        background-color: white;
+        border: 2px solid $primary;
+        
+        .card-title{
+            margin: 0;
+        }
+
+        .card-body{
+            padding: 1.5rem;
+            margin: 0;
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .sectionTitle, .card-title{
+        background-color: $primary;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #projectContent{
+        z-index: 2;
+    }
+
+    @include media-breakpoint-up(md){
+        .card{
+            width: 30%;
+        }
+    }
+}

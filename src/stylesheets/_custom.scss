@@ -1,0 +1,147 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+
+/* Mixins */
+@mixin button-style{
+    background-color: $accent !important;
+    color: white !important;
+    border: 2px solid transparent;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
+    font-weight: 600;
+
+    &:hover{
+        border-color: $accent;
+        background-color: $teal !important;
+        color: black !important;
+    }
+}
+
+/* Classes for all pages */
+.sectionTitle{
+    background-color: $primary;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.line{
+    width: 3px;
+    background-color: $primary;
+    height: auto;
+}
+
+.fw-semibold{
+    font-weight: 600;
+}
+
+.card{
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
+}
+
+/* Ids for all pages */
+#projectImgContainer{
+    img{
+        width: 100vw;
+        z-index: 5;
+    }
+}
+
+/* Footer for all pages */
+footer{
+    background-color: $dark;
+    text-align: center;
+    color: white;
+    img, i{
+        outline: 2px solid transparent;
+        &:hover{
+            outline-color: white;
+            border-radius: 0.5rem;
+            outline-offset: 5px;
+        }
+    }
+    
+}
+
+/* Navigation */
+nav{
+    background-color: $dark;
+    min-height: 5rem;
+
+    .navbar-toggler{
+        border: 2px solid $light !important;
+        color: $light !important;
+    }
+    
+    .logoContainer{
+        max-width: 15%;
+        border: 2px solid transparent;
+        &:hover{
+            border-color: white;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .nav-item{
+        font-size: $h4-font-size;
+        border: 2px solid transparent;
+        
+        .active{
+            text-decoration: underline;
+            text-underline-offset: .4rem;
+        }
+
+        &:hover{
+            border-color: white;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+main nav {
+    background-color: $secondary; 
+    min-height: 100%;
+
+    ol.breadcrumb{
+        li, a, .breadcrumb-item::before, .active{
+            color: white;
+        }
+    }
+}
+
+/* Navigation Media Queries */
+@include media-breakpoint-up(md){
+    nav{
+        min-height: 4.5rem;
+        .logoContainer{
+            max-width: 12%;
+        }
+        
+        .nav-item{
+            font-size: $h4-md-font-size;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+    nav{
+        min-height: 3.5rem;
+
+        .logoContainer{
+            max-width: 10%;
+        }
+        
+        .nav-item{
+            font-size: $h4-lg-font-size;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl){
+    nav{
+        min-height: 5rem;
+
+        .logoContainer{
+            max-width: 7.5%;
+        }
+    }
+}
