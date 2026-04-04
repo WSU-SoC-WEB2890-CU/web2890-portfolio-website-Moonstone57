@@ -38,7 +38,15 @@
     box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
 }
 
+/* Ids for all pages */
+#projectImgContainer{
+    img{
+        width: 100vw;
+        z-index: 5;
+    }
+}
 
+/* Footer for all pages */
 footer{
     background-color: $dark;
     text-align: center;
@@ -100,6 +108,7 @@ main nav {
     }
 }
 
+/* Navigation Media Queries */
 @include media-breakpoint-up(md){
     nav{
         min-height: 4.5rem;
