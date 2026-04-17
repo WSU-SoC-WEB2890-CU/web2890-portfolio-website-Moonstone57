@@ -2,7 +2,7 @@
 @use 'fonts' as *;
 @use 'custom' as *;
 
-
+/* Overview Content */
 #caseStudyContent{
     img{
         width: 100vw;
@@ -12,13 +12,13 @@
     #caseStudyOverviewSection{
         background-color: $secondary;
         color: white;
-        
     }
     
     .table{
         th, td{
             border: 1px solid $primary;
         }
+
         tbody{
             border-color: $primary;
         }
@@ -35,8 +35,27 @@
         border: 2px solid $primary;
         margin: 1.5rem 0;
         width: 100%;
+        
         .card-title{
             padding: 1rem;
+        }
+    }
+
+    /* Img Color Overlay */
+    #projectImgContainer{
+        height: 100%;
+        position: relative;
+            
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(black, 0.3);
+            z-index: 2;
+        }
+
+        img{
+            z-index: 1;
         }
     }
 
@@ -104,6 +123,7 @@
 
         img{
             border: 3px solid $primary;
+            box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
         }
     }
 }

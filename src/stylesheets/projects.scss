@@ -62,21 +62,12 @@
             justify-content: center;
         }
 
-        .colorOverlay{
-            position: relative;
-            &::before{
-                content: "";
-                position: absolute;
-                inset: 0;
-                background-color: rgba($accent, 0.3);
-            }
-        }
-
         &:hover{
             background-color: $primary;
             color: white;
             text-align: center;
             display: flex;
+            border-radius: 1.25rem;
 
             .hoverContent{
                 visibility: visible;

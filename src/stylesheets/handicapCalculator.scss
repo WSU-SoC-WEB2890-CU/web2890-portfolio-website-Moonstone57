@@ -2,6 +2,23 @@
 @use 'fonts' as *;
 @use 'custom' as *;
 
+#projectImgContainer{
+    height: 100%;
+    position: relative;
+        
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(black, 0.3);
+        z-index: 2;
+    }
+
+    img{
+        z-index: 1;
+    }
+}
+
 #handicapCalculatorContentSection{
     background-color: $secondary;
 

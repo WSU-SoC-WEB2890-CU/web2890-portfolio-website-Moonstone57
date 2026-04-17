@@ -39,56 +39,64 @@
       <div id="projectImgContainer">
         <img class="w-100" src="images/handicapCalculator.png" alt="Golf Handicap Calculator Website Home Page">
       </div>
-        <h1 class="sectionTitle">Golf Handicap Calculator</h1>
-        <nav aria-label="breadcrumb" class="px-3 pt-4 m-0">
-          <ol class="breadcrumb m-0 p-0">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Golf Handicap Calculator</li>
-          </ol>
-        </nav>
+
+      <h1 class="sectionTitle">Golf Handicap Calculator</h1>
+      <nav aria-label="breadcrumb" class="px-3 pt-4 m-0">
+        <ol class="breadcrumb m-0 p-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Golf Handicap Calculator</li>
+        </ol>
+      </nav>
+
       <article class="container-fluid d-flex flex-column flex-md-row justify-content-evenly py-3 py-md-5 px-3">
         <div class="card mb-3 mb-md-0">
-          <h3 class="card-title">Overview</h3>
+          <h2 class="card-title">Overview</h2>
           <div class="card-body">
             <p>I created the Golf Handicap Calculator for a class assignment in 2025. For this assignment, I needed to create a webpage that would prioritize Javascript in a web application. I decided to create a golf handicap calculator. This website allows a user to input their score either through hole by hole or through total scores. The website then takes their score to calculate the difference of their score and par. Then it displays the handicap to the users.</p>
           </div>
         </div>
+
         <div class="card mb-3 mb-md-0">
-          <h3 class="card-title">Process</h3>
+          <h2 class="card-title">Process</h2>
           <div class="card-body">
-            <p>This website utilizes HTML, CSS, and JavaScript. Another important aspect of the website that is created through Javascript is saving the handicap information through local storage. This means that even if the user reloads the page they will not lose their already calculated handicap.</p>
+            <p>This website utilizes HTML, CSS, and JavaScript. Another important aspect of the website, that is created through Javascript, is saving the handicap information through local storage. This means that even if the user reloads the page they will not lose their already calculated handicap. It was also important that only the specific elements a user needs are shown on the screen.</p>
           </div>
         </div>
+
         <div class="card">
-          <h3 class="card-title">Takeaways</h3>
+          <h2 class="card-title">Takeaways</h2>
           <div class="card-body">
-            <p>This was my first JavaScript project. I learned a lot through this project. I learned how to apply link JavaScript to HTML and CSS. I also gained experience making a website’s form inputs truly functional.</p>
+            <p>This was my first JavaScript project. I learned a lot through this project. I learned how to apply link JavaScript to HTML and CSS. I also gained experience making a website’s form inputs truly functional. I found it quite challenging at first to figure out how to show and hide elements with JavaScript. This project gave me a greater insight on how to apply JavaScript in an effective way.</p>
           </div>
         </div>
       </article>
     </section>
   </main>
 
-  <footer class="p-4 container-fluid justify-content-center">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-4 col-lg-2 mb-4">
+  <footer class="container-fluid justify-content-center align-items-center d-flex">
+    <div class="row d-flex flex-row justify-content-center align-items-center gap-3 gap-md-0">
+      <div class="col-12 col-md-4">
         <a class="logoContainer d-flex justify-content-center" href="index.html">
-          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid w-75" alt="Katie Aland Logo">
+          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid" alt="Katie Aland Logo">
         </a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col d-flex justify-content-center gap-3">
-        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank">
-          <i class="bi bi-linkedin fs-1"></i>
+
+      <div class="col-12 col-md-4 d-flex justify-content-center gap-3 px-5">
+        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank" class="my-auto">
+          <i class="bi bi-linkedin fs-2"></i>
+          <span class="visually-hidden">Opens LinkedIn in a new tab</span>
         </a>
         <a href="contact.html#contactSection">
           <i class="bi bi-envelope fs-1"></i>
+          <span class="visually-hidden">Contact me</span>
         </a>
       </div>
-    </div>  
-    <p class="mt-4">&copy;2026 Katie Aland</p>
+     
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <p class="m-auto">&copy;2026 Katie Aland</p>
+      </div>
+    </div> 
   </footer>
 
     <script type="module" src="./javascripts/main.js"></script>

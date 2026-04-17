@@ -28,13 +28,16 @@ h4{
 #heroImgSection{
     height: 15rem;
     width: 100%;
+    background: $secondary;
+    color: $light;
+
     #heroImgContainer{
-        background-image: url("../images/designLargeHero.jpg");
+        background-image: url("../images/portfolioHeroImgRed.jpg");
         background-size: cover;
-        background-position: 80% bottom;
+        background-position: right center;
         background-repeat: no-repeat;
         height: 15rem;
-        width: 130%;
+        width: 100%;
 
         #heroText{
             position: relative;
@@ -45,7 +48,6 @@ h4{
                 font-weight: 600;
             }
         }
-
     }
 
     /* Hero Img Media Queries */
@@ -53,54 +55,125 @@ h4{
         height: 25rem;
 
         #heroImgContainer{
-            background-position: 60% bottom;
             height: 25rem;
-            width: 122%;
+            width: 100%;
         }
-        
     }
 
     @include media-breakpoint-up(md){
         height: 30rem;
 
         #heroImgContainer{
-            background-position: 30% bottom;
             height: 30rem;
             width: 100%;
         }
-        
     }
 
     @include media-breakpoint-up(lg){
-        height: 100vh;
+        height: 38rem;
         
         #heroImgContainer{
-            background-position: left 20% center;
-            height: 100vh;
+            height: 38rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        height: 47rem;
+        
+        #heroImgContainer{
+            height: 44rem;
+            width: 97%;
         }
     }
 }
 
 #recentProjectsSection{
     .card{
-        width: 75%;
+        border-radius: 0;
+        border: 3px solid $primary;
+        text-decoration: none;
+        color: black;
+        height: 17rem;
+        width: 85%;
         text-align: center;
-        background-color: $secondary;
-        color: white;
-        
-        hr{
-            background-color: $primary;
-            height: .15rem;
-            opacity: 1;
+
+        .hoverContent{
+            visibility: hidden;
+            display: none;
         }
 
         .card-title{
-            background-color: $primary;
+            font-weight: 700;
+        }
 
+        .card-body{
+            justify-content: center;
+        }
+
+        .colorOverlay{
+            position: relative;
+
+            &::before{
+                content: "";
+                position: absolute;
+                inset: 0;
+                background-color: rgba($accent, 0.3);
+            }
+        }
+
+        &:hover{
+            background-color: $primary;
+            color: white;
+            text-align: center;
+            display: flex;
+            border-radius: 1.25rem;
+
+            .hoverContent{
+                visibility: visible;
+                display: block;
+            }
+
+            img{
+                visibility: hidden;
+                display: none;
+            }
+
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        //Card Media Queries
+        @include media-breakpoint-up(sm){
+            height: 23rem;
         }
 
         @include media-breakpoint-up(md){
-            width: 47%;
+            width: 45%;
+        }
+
+        @include media-breakpoint-up(lg){
+            height: 22rem;
+        }
+
+        @include media-breakpoint-up(xl){
+            height: 26rem;
+        }
+
+         @include media-breakpoint-up(xxl){
+            height: 32rem;
+        }
+    }
+
+    hr{
+        border: 1px solid white;
+        opacity: 1;
+        width: 100%;
+        margin: 1rem auto;
+        .hoverShow{
+            display: flex;
         }
     }
 }
@@ -110,6 +183,7 @@ h4{
     text-align: center;
     height: 30rem;
     
+    /* About Contact Container Image */
     #featureImgContainer{
         background-image: url("../images/trees.jpg");
         background-size: cover;
@@ -137,17 +211,28 @@ h4{
     }
 
     @include media-breakpoint-up(lg){
+        height: 38rem;
+
         #featureImgContainer{
             background-image: url("../images/HeadShotAboutContactDesktop.jpg");
-            background-position: 70% center;
+            background-position: 60% bottom;
 
             #featureImgText{
                 width: 40%;
             }
         }
     }
+
+    @include media-breakpoint-up(xl){
+        height: 52rem;
+
+        #featureImgContainer{
+            background-position: 70% top;
+        }
+    }
 }
 
+/* Footer Styles */
 footer {
     i{
         font-size: 5.5rem;
@@ -161,6 +246,7 @@ footer {
         #heroText{
             top: 7%;
             left: 4%;
+
             h1{
                 font-size: $h1-md-font-size;
             }
@@ -185,6 +271,7 @@ footer {
         #heroText{
             top: 2%;
             left: 2%;
+            
             h1{
                 font-size: $h1-lg-font-size;
             }

@@ -41,40 +41,49 @@
   <main>
     <section id="heroImgSection">
       <div id="heroImgContainer" class="d-flex align-items-start">
-        <div id="heroText" class="ms-4 d-flex flex-column align-items-center justify-content-center text-center my-auto">
-          <h1 class="p-1 p-md-3"><strong>Hello! I'm<br><span class="text-primary">Katie Aland</span></strong></h1>
-          <h2 class="p-1 p-md-3 fw-semibold">UX & Web<br>Design Portfolio</h2>
-          <a href="projects.html" class="btn m-1 m-md-3">View My Work</a>
+        <div id="heroText" class="ms-2 ms-md-3 ms-lg-1 ms-xl-5 d-flex flex-column align-items-start justify-content-center text-start my-auto">
+          <h1 class="p-1 p-md-2 text-white">Hello! I'm<br><strong>Katie Aland</strong></h1>
+          <h2 class="p-1 p-md-2 fw-semibold">UX & Web<br>Design Portfolio</h2>
+          <a href="projects.html" class="btn m-1 m-md-2">View My Work</a>
         </div>
       </div>
     </section>
     
     <section id="recentProjectsSection" class="mb-5">
       <h2 class="sectionTitle">Recent Projects</h2>
-        <div id="projectCards" class="container d-flex flex-column flex-md-row mt-5 justify-content-between align-items-center">
-          <div class="card my-3">
-            <img class="card-img-top" src="images/caseStudy.png" alt="Aland Accelerando Website Home Page">
-            <h3 class="card-title p-2">Aland Accelerando Website</h3>
-            <div class="card-body">
-              <p class="card-text">Figma Prototype</p>
-              <hr>
-              <p class="card-text">Created for Class Assignment</p>
-              <hr>
-              <a href="caseStudy.html" class="btn">View Case Study</a>
-            </div>
+        <article class="projectCards container-fluid text-center mt-5 mt-md-0">
+          <div class="row d-flex justify-content-evenly mx-5 m-md-0 mb-md-5 gy-5">
+            <a class="card col-12 col-md-5 px-0" href="caseStudy.html">
+              <div class="colorOverlay">
+                <img class="img-fluid" src="images/caseStudy.png" alt="Aland Accelerando Website Home Page">
+              </div>
+              
+              <div class="card-body p-2 mx-1 d-flex align-items-center flex-column">
+                <h3 class="card-title">Aland Accelerando Website</h3>
+                <p class="mb-0 fs-5">Figma Prototype</p>
+                <div class="hoverContent">
+                  <hr class="border-none">
+                  <p class="mb-0">December 2025</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="card col-12 col-md-5 px-0" href="golfCourse.html">
+              <div class="colorOverlay">
+                <img class="img-fluid" src="images/katieGolfCourse.png" alt="Katie's Golf Course Multi page Website">
+              </div>
+              
+              <div class="card-body p-2 mx-1 d-flex align-items-center flex-column">
+                <h3 class="card-title">Golf Course Website</h3>
+                <p class="mb-0 fs-5">Multi Page Website</p>
+                <div class="hoverContent">
+                  <hr class="border-none">
+                  <p class="mb-0">April 2025</p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="card my-3">
-            <img class="card-img-top" src="images/katieGolfCourse.png" alt="Katie's Golf Course Multi page Website">
-            <h3 class="card-title p-2">Golf Course Website</h3>
-            <div class="card-body">
-              <p class="card-text">Multi-Page Website</p>
-              <hr>
-              <p class="card-text">Created for Class Assignment</p>
-              <hr>
-              <a href="golfCourse.html" class="btn">View Project</a>
-            </div>
-          </div>
-        </div>     
+        </article>
     </section>
     
     <section id="aboutContactSection">
@@ -85,6 +94,7 @@
             <h3 class="pb-2">Want to learn more about me?<br>Hello, I'm Katie Aland!</h3>
             <a href="about.html" class="btn">Get to Know Me</a>
           </div>
+
           <div id="contactContainer" class="p-3 w-100 my-5">
             <h3 class="pb-2">Interested in working with me?<br>Let's collaborate!</h3>
             <a href="contact.html" class="btn">Get in Contact</a>
@@ -94,25 +104,29 @@
     </section>
   </main>
 
-  <footer class="p-4 container-fluid justify-content-center">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-4 col-lg-2 mb-4">
+  <footer class="container-fluid justify-content-center align-items-center d-flex">
+    <div class="row d-flex flex-row justify-content-center align-items-center gap-3 gap-md-0">
+      <div class="col-12 col-md-4">
         <a class="logoContainer d-flex justify-content-center" href="index.html">
-          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid w-75" alt="Katie Aland Logo">
+          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid" alt="Katie Aland Logo">
         </a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col d-flex justify-content-center gap-3">
-        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank">
-          <i class="bi bi-linkedin fs-1"></i>
+
+      <div class="col-12 col-md-4 d-flex justify-content-center gap-3 px-5">
+        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank" class="my-auto">
+          <i class="bi bi-linkedin fs-2"></i>
+          <span class="visually-hidden">Opens LinkedIn in a new tab</span>
         </a>
         <a href="contact.html#contactSection">
           <i class="bi bi-envelope fs-1"></i>
+          <span class="visually-hidden">Contact me</span>
         </a>
       </div>
-    </div>  
-    <p class="mt-4">&copy;2026 Katie Aland</p>
+     
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <p class="m-auto">&copy;2026 Katie Aland</p>
+      </div>
+    </div> 
   </footer>
 
   <script type="module" src="./javascripts/main.js"></script>

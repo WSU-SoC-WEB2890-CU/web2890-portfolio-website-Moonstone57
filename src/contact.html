@@ -40,24 +40,29 @@
         <div class="col-4 my-4 d-none d-lg-flex">
           <img class="img-fluid w-100 h-auto" src="images/HeadShotRedWall.jpg" alt="Katie Aland playing a violin">
         </div>
+
         <article class="heroText col-12 col-lg-7 mt-4 mt-lg-0 text-md-start">
           <div class="text-center text-lg-start mb-4">
             <h1 class="fw-bold">Contact Me</h1>
             <h2>Interested in working with me? Get in touch!</h2>
           </div>
+
           <form class="w-100">
             <div class="mb-3">
               <label for="firstName" class="form-label fs-4">First Name</label>
-              <input type="text" class="form-control p-2 w-25" id="firstName" placeholder="Ex. John">
+              <input type="text" class="form-control p-2" id="firstName" placeholder="Ex. John">
             </div>
+
             <div class="mb-3">
               <label for="lastName" class="form-label fs-4">Last Name</label>
-              <input type="text" class="form-control p-2 w-25" id="lastName" placeholder="Ex. Doe">
+              <input type="text" class="form-control p-2" id="lastName" placeholder="Ex. Doe">
             </div>
+
             <div class="mb-3">
               <label for="contactMessage" class="form-label fs-4">Message</label>
-              <textarea class="form-control p-2 w-75" id="contactMessage" rows="3" placeholder="Write your message here..."></textarea>
+              <textarea class="form-control p-2" id="contactMessage" rows="3" placeholder="Write your message here..."></textarea>
             </div>
+
             <button type="submit" class="btn w-25 mt-3 fw-semibold">Submit</button>
           </form>
         </article>
@@ -65,25 +70,29 @@
     </section>
   </main>
 
-  <footer class="p-4 container-fluid justify-content-center">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-4 col-lg-2 mb-4">
+  <footer class="container-fluid justify-content-center align-items-center d-flex">
+    <div class="row d-flex flex-row justify-content-center align-items-center gap-3 gap-md-0">
+      <div class="col-12 col-md-4">
         <a class="logoContainer d-flex justify-content-center" href="index.html">
-          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid w-75" alt="Katie Aland Logo">
+          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid" alt="Katie Aland Logo">
         </a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col d-flex justify-content-center gap-3">
-        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank">
-          <i class="bi bi-linkedin fs-1"></i>
+
+      <div class="col-12 col-md-4 d-flex justify-content-center gap-3 px-5">
+        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank" class="my-auto">
+          <i class="bi bi-linkedin fs-2"></i>
+          <span class="visually-hidden">Opens LinkedIn in a new tab</span>
         </a>
         <a href="contact.html#contactSection">
           <i class="bi bi-envelope fs-1"></i>
+          <span class="visually-hidden">Contact me</span>
         </a>
       </div>
-    </div>  
-    <p class="mt-4">&copy;2026 Katie Aland</p>
+     
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <p class="m-auto">&copy;2026 Katie Aland</p>
+      </div>
+    </div> 
   </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
