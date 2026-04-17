@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Portfolio website</title>
+  <title>Katie Aland Portfolio Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Portfolio website ...">
@@ -12,16 +11,123 @@
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
+  <nav class="navbar navbar-expand-lg navbar-dark p-2">
+    <div class="container-fluid align-items-center">
+      <a class="navbar-brand logoContainer" href="index.html">
+      <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid p-1" alt="Katie Aland Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-1"></i>
+    </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="heroImgSection">
+      <div id="heroImgContainer" class="d-flex align-items-start">
+        <div id="heroText" class="ms-2 ms-md-3 ms-lg-1 ms-xl-5 d-flex flex-column align-items-start justify-content-center text-start my-auto">
+          <h1 class="p-1 p-md-2 text-white">Hello! I'm<br><strong>Katie Aland</strong></h1>
+          <h2 class="p-1 p-md-2 fw-semibold">UX & Web<br>Design Portfolio</h2>
+          <a href="projects.html" class="btn m-1 m-md-2">View My Work</a>
+        </div>
+      </div>
+    </section>
     
-    Portfolio Website
-  </h1>
+    <section id="recentProjectsSection" class="mb-5">
+      <h2 class="sectionTitle">Recent Projects</h2>
+        <article class="projectCards container-fluid text-center mt-5 mt-md-0">
+          <div class="row d-flex justify-content-evenly mx-5 m-md-0 mb-md-5 gy-5">
+            <a class="card col-12 col-md-5 px-0" href="caseStudy.html">
+              <div class="colorOverlay">
+                <img class="img-fluid" src="images/caseStudy.png" alt="Aland Accelerando Website Home Page">
+              </div>
+              
+              <div class="card-body p-2 mx-1 d-flex align-items-center flex-column">
+                <h3 class="card-title">Aland Accelerando Website</h3>
+                <p class="mb-0 fs-5">Figma Prototype</p>
+                <div class="hoverContent">
+                  <hr class="border-none">
+                  <p class="mb-0">December 2025</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="card col-12 col-md-5 px-0" href="golfCourse.html">
+              <div class="colorOverlay">
+                <img class="img-fluid" src="images/katieGolfCourse.png" alt="Katie's Golf Course Multi page Website">
+              </div>
+              
+              <div class="card-body p-2 mx-1 d-flex align-items-center flex-column">
+                <h3 class="card-title">Golf Course Website</h3>
+                <p class="mb-0 fs-5">Multi Page Website</p>
+                <div class="hoverContent">
+                  <hr class="border-none">
+                  <p class="mb-0">April 2025</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </article>
+    </section>
+    
+    <section id="aboutContactSection">
+      <h2 class="sectionTitle mb-0">About & Contact</h2>
+      <div id="featureImgContainer" class="d-flex align-items-center pb-2">
+        <div id="featureImgText" class="mx-auto mx-lg-5 ps-lg-5">
+          <div id="aboutContainer" class="p-3 w-100">
+            <h3 class="pb-2">Want to learn more about me?<br>Hello, I'm Katie Aland!</h3>
+            <a href="about.html" class="btn">Get to Know Me</a>
+          </div>
+
+          <div id="contactContainer" class="p-3 w-100 my-5">
+            <h3 class="pb-2">Interested in working with me?<br>Let's collaborate!</h3>
+            <a href="contact.html" class="btn">Get in Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container-fluid justify-content-center align-items-center d-flex">
+    <div class="row d-flex flex-row justify-content-center align-items-center gap-3 gap-md-0">
+      <div class="col-12 col-md-4">
+        <a class="logoContainer d-flex justify-content-center" href="index.html">
+          <img src="images/light-portfolio-logo-horizontal.png" class="img-fluid" alt="Katie Aland Logo">
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4 d-flex justify-content-center gap-3 px-5">
+        <a href="https://www.linkedin.com/in/katie-aland/" target="_blank" class="my-auto">
+          <i class="bi bi-linkedin fs-2"></i>
+          <span class="visually-hidden">Opens LinkedIn in a new tab</span>
+        </a>
+        <a href="contact.html#contactSection">
+          <i class="bi bi-envelope fs-1"></i>
+          <span class="visually-hidden">Contact me</span>
+        </a>
+      </div>
+     
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <p class="m-auto">&copy;2026 Katie Aland</p>
+      </div>
+    </div> 
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>

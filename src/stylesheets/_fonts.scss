@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+/* Small Size fonts */
+h1, .h1{
+    font-size: $h1-font-size;
+    font-weight: 700;
+}
+
+h2{
+    font-size: $h2-font-size;
+    font-weight: 600;
+}
+
+h3{
+    font-size: $h3-font-size;
+    font-weight: 500;
+}
+
+h4{
+    font-size: $h4-font-size;
+    font-weight: 400;
+}
+
+/* Medium Size fonts */
+@include media-breakpoint-up(md){
+    h1{
+        font-size: $h1-md-font-size;
+    }
+
+    h2{
+        font-size: $h2-md-font-size;
+    }
+
+    h3{
+        font-size: $h3-md-font-size;
+    }
+
+    h4{
+        font-size: $h4-md-font-size;
+    }
+}
+
+/* Large Size fonts */
+@include media-breakpoint-up(lg){
+    h1{
+        font-size: $h1-lg-font-size;
+    }
+
+    h2{
+        font-size: $h2-lg-font-size;
+    }
+
+    h3{
+        font-size: $h3-lg-font-size;
+    }
+
+    h4{
+        font-size: $h4-lg-font-size;
+    }
+}
+

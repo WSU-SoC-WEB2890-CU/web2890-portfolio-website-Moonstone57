@@ -1,0 +1,230 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+
+/* Mixins */
+@mixin button-style{
+    background-color: $pink !important;
+    color: black !important;
+    border: 2px solid rgba($secondary, 0.5) !important;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
+    font-weight: 600 !important;
+    border-radius: 0.6rem !important;
+
+    &:hover{
+        background-color: $teal !important;
+        color: black !important;
+        border-color: rgba($accent, 0.5) !important;
+        border-radius: 1rem !important;
+    }
+
+    @include media-breakpoint-up(lg){
+        min-width: 10rem;
+    }
+}
+
+/* Classes for all pages */
+.sectionTitle{
+    background-color: $primary;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.line{
+    width: 3px;
+    background-color: $secondary;
+    height: auto;
+
+    @include media-breakpoint-up(md){
+        background-color: $primary;
+    }
+}
+
+.fw-semibold{
+    font-weight: 600;
+}
+
+.text-white{
+    color: white;
+}
+
+.colorOverlay{
+    position: relative;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba($accent, 0.4) !important;
+    }
+}
+
+.btn{
+    transition: border-radius .3s ease-out !important;
+}
+
+//All Cards
+.card{
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba($dark, 0.25);
+}
+
+//Project Cards
+a.card{
+    transition: border-radius .3s ease-out;
+    overflow: hidden;
+}
+
+/* Focus */
+.btn, a.card, input, textarea{
+    &:focus-within{
+        outline: 2px solid white !important;
+        outline-offset: 4px;
+        box-shadow: 0 0 0 0.25rem rgba($dark, 0.75) !important;
+        transition: none;
+    }
+}
+
+/* Ids for all pages */
+#projectImgContainer{
+    img{
+        width: 100vw;
+        z-index: 5;
+    }
+}
+
+/* Footer for all pages */
+footer{
+    background-color: $dark;
+    text-align: center;
+    color: white;
+    padding: 1.75rem;
+
+    img, i{
+        outline: 2px solid transparent;
+        transition: all .3s ease-out;
+
+        &:hover{
+            outline-color: white;
+            border-radius: 0.5rem;
+            outline-offset: 5px;
+        }
+    }
+
+    .logoContainer img{
+        width: 25%;
+
+        @include media-breakpoint-up(md){
+            width: 40%;
+        }
+
+        @include media-breakpoint-up(lg){
+            width: 50%;
+        }
+    }
+}
+
+/* Navigation */
+nav{
+    background-color: $dark;
+    min-height: 5rem;
+    border-bottom: 1px solid white;
+
+    .navbar-toggler{
+        border: 2px solid $light !important;
+        color: $light !important;
+        transition: background-color .3s ease-out;
+
+        &:hover{
+            background-color: $primary;
+        }
+    }
+    
+    /* Nav Logo */
+    .logoContainer{
+        max-width: 20%;
+        border: 2px solid transparent;
+        transition: all .3s ease-out;
+        
+        &:hover{
+            border-color: white;
+            border-radius: 0.5rem;
+        }
+
+        @include media-breakpoint-up(md){
+            max-width: 15%;
+        }
+    }
+
+    .nav-item{
+        font-size: $h4-font-size;
+        border: 2px solid transparent;
+        transition: all .3s ease-out;
+        padding-left: 0.3rem;
+        
+        .active{
+            text-decoration: underline;
+            text-underline-offset: .4rem;
+        }
+
+        &:hover{
+            border-color: white;
+            border-radius: 0.5rem;
+        }
+        
+        @include media-breakpoint-up(lg){
+            padding-left: 0;
+        }
+    }
+}
+
+//Bread Crumbs
+main nav {
+    background-color: $secondary; 
+    min-height: 100%;
+    border: none;
+
+    ol.breadcrumb{
+        li, a, .breadcrumb-item::before, .active{
+            color: white;
+        }
+    }
+}
+
+/* Navigation Media Queries */
+@include media-breakpoint-up(md){
+    nav{
+        min-height: 4.5rem;
+        .logoContainer{
+            max-width: 12%;
+        }
+        
+        .nav-item{
+            font-size: $h4-md-font-size;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+    nav{
+        min-height: 3.5rem;
+
+        .logoContainer{
+            max-width: 10%;
+        }
+        
+        .nav-item{
+            font-size: $h4-lg-font-size;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl){
+    nav{
+        min-height: 5rem;
+
+        .logoContainer{
+            max-width: 7.5%;
+        }
+    }
+}
+
